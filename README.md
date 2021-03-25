@@ -24,8 +24,8 @@ vi) Modify the following lines:
 
       a) Line 11 with task abbreviation. e.g. Task = "RSPM"
       b) Lines 14 through 16 with aforementioned files names
-      c) Line 24 with full network names (from classification). e.g. C1_Neg_92_TDMN_0.69 / PP_NegL92_AAR_0.57
-      d) Line 27 with shortened network names. e.g. DMN_AAR
+      c) Line 19 with full network names (from classification). e.g. C1_Neg_92_TDMN_0.69 / PP_NegL92_AAR_0.57
+      d) Line 22 with shortened network names. e.g. DMN_AAR
  
 vii) Run it! The docx should then be in your py project folder.
 
