@@ -15,16 +15,16 @@ canoload = 'canoload_RSPM_con.xlsx'
 CCA = 'CCA_RSPM_con.csv'
 PCA = 'PCA_RSPM_con.csv'
 
-#Open Variables.txt File
-with open('Variables.txt') as csv_file:
-    var = csv.reader(csv_file, delimiter=',')
-    variables = list(var)[0]
-
 #Network Names
 network = ['C1_Neg_92_TDMN_0.69 / PP_NegL92_AAR_0.57', 'C2_Pos_92_1RESP_0.78','C3_Pos_78_EXT_1.20',
            'C4_Pos_63_INIT_0.91 / Neg_37_TDMN_0.80','C5_Pos_88_CE_0.78 / PP_NegL_12_1RESP_0.72']
 #Shortened Names
 networkshort = ['DMN_AAR', 'RESP', 'EXT', 'INIT_DMN', 'CE_RESP']
+
+#Open Variables.txt File
+with open('Variables.txt') as csv_file:
+    var = csv.reader(csv_file, delimiter=',')
+    variables = list(var)[0]
 
 #Network Matching Function (name extension)
 def NMF(x):
