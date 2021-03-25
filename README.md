@@ -14,7 +14,8 @@ iii) Add Variables.txt file to project folder
 iv) Open ReportGen.py
 
 v) Make sure the following packages are installed:
-  a) numpy
+
+    a) numpy
   b) python-docx
   c) pandas
   
