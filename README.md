@@ -17,7 +17,8 @@ v) Make sure the following packages are installed:
 
     a) numpy
     b) python-docx
-    c) pandas
+    c) openpyxl
+    d) pandas
   
 vi) Modify the following lines:
 
