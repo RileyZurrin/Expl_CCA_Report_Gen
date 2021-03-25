@@ -3,13 +3,13 @@ A script to generate a report for exploratory CCA output.
 
 Steps to run:
 
-i) Add canoload, CCA, and PCA files from exploratory CCA output to project folder
+i) Add canoload, CCA, and PCA files from exploratory CCA output to your py project folder
     e.g.'canoload_RSPM_con.xlsx', 'CCA_RSPM_con.csv', and 'PCA_RSPM_con.csv'
 
 ii) Make file labelled Variables.txt containing all behavioural variables seperated by commas (no spaces!)
     e.g. Age_at_qualt,EducationEstYears,VarGC
     
-iii) Add Variables.txt file to project folder
+iii) Add Variables.txt file to py project folder
 
 iv) Open ReportGen.py
 
@@ -27,9 +27,9 @@ vi) Modify the following lines:
       c) Line 24 with full network names (from classification). e.g. C1_Neg_92_TDMN_0.69 / PP_NegL92_AAR_0.57
       d) Line 27 with shortened network names. e.g. DMN_AAR
  
-vii) Run it!
+vii) Run it! The docx should then be in your py project folder.
 
-viii) Add Table of Contents: References > Table of Contents > Contemporary
+viii) Open docx file and add Table of Contents: References > Table of Contents > Contemporary
 
 ix) Adjust "Summary of Study, Networks, Conditions, and Behavioural Data" Section with task information.
 
