@@ -16,8 +16,8 @@ iv) Open ReportGen.py
 v) Make sure the following packages are installed:
 
     a) numpy
-  b) python-docx
-  c) pandas
+    b) python-docx
+    c) pandas
   
 vi) Modify the following lines:
   a) Line 11 with task abbreviation. e.g. Task = "RSPM"
