@@ -22,7 +22,7 @@ network = ['C1_Neg_91_TDMN_0.77', 'C2_Pos_86_LPN_1.52','C3_Pos_71_1RESP_1.14']
 #Shortened Names (In same order as line above)
 networkshort = ['DMN', 'LPN', 'RESP']
 
-#Open Variables.txt File
+#Open Variables.csv File
 with open('Variables.csv') as csv_file:
     var = csv.reader(csv_file, delimiter=',')
     variables = list(var)[0]
