@@ -26,7 +26,7 @@ vi) Modify the following lines:
       b) Line 13 with Group names. e.g. Groups = ["Controls", "Bipolar Patients"]
       b) Lines 16 through 18 with aforementioned files names
       c) Line 21 with full network names (from classification). e.g. C1_Neg_92_TDMN_0.69 / PP_NegL92_AAR_0.57
-      d) Line 23 with shortened network names in same order as full network names. e.g. DMN_AAR
+      d) Line 23 with shortened network names in same order as full network names. Make sure names are consistent with network names in canoload file. e.g. DMN_AAR
  
 vii) Run it! The docx should then be in your py project folder.
 
