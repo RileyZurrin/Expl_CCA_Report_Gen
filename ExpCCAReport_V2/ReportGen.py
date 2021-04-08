@@ -103,24 +103,26 @@ for n in range(len(constringarray)):
 # Write Report
 
 mydoc.add_heading(Task + " Multiple-Set Canonical Correlation Report", 0)
-mydoc.add_heading("Summary of Study, Networks, Conditions, and Behavioural Data")
+mydoc.add_heading("Summary of Study")
 if len(Groups) == 1:
     mydoc.add_paragraph(
         "This report is for the ________ (" + Task + ") task, in which participants were ___(describe task)___. There were " + str(
             len(conditionshort))
-        + ' conditions: ' + constring + ' ' + constringlong + ' The ' + str(
-            len(network)) + ' networks identified as part of this study are: '
-        + netstring + ' Variables inputted include the ITP and RTB values for each network. '
-                      'Behavioural variables used in the analysis are ' + varstring)
+        + ' conditions: ' + constring + ' ' + constringlong)
+
 if len(Groups) > 1:
     mydoc.add_paragraph(
         "This report is for the ________ (" + Task + ") task, in which participants were ___(describe task)___. There were " + str(
             len(Groups)) + " groups: " + groupstring + " There were " + str(
             len(conditionshort))
-        + ' conditions: ' + constring + ' ' + constringlong + ' The ' + str(
-            len(network)) + ' networks identified as part of this study are: '
-        + netstring + ' Variables inputted include the ITP and RTB values for each network. '
-                      'Behavioural variables used in the analysis are ' + varstring)
+        + ' conditions: ' + constring + ' ' + constringlong)
+
+mydoc.add_heading("Networks")
+for l in range(len(network)):
+    mydoc.add_paragraph(network[l])
+mydoc.add_heading("Variables Included in Exploratory CCA")
+mydoc.add_paragraph(' The increase to peak (ITP) and return to baseline (RTB) values for each network were included. '
+'The behavioural variables used in the analysis are ' + varstring)
 
 for p in range(len(Groups)):
     if len(Groups) == 1:
