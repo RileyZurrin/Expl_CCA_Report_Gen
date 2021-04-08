@@ -17,7 +17,7 @@ canoload = ['canoload_LDT_Con.xlsx', 'canoload_LDT_Bip.xlsx']
 CCA = ['CCA_LDT_Con.csv', 'CCA_LDT_Bip.csv']
 PCA = ['PCA_LDT_Con.csv', 'PCA_LDT_Bip.csv']
 
-#Full Network Names (In order, C1 to Cn)
+#Full Network Names from Classification (In order, C1 to Cn)
 network = ['C1_Neg_91_TDMN_0.77', 'C2_Pos_86_LPN_1.52','C3_Pos_71_1RESP_1.14']
 #Shortened Names (In same order as line above)
 networkshort = ['DMN', 'LPN', 'RESP']
@@ -28,8 +28,9 @@ with open('Variables.csv') as csv_file:
     variables = list(var)[0]
 
 
-
-
+    
+#Do Not Edit Below This Line
+#--------------------------------------------------------------------------------------------------
 
 
 
