@@ -66,12 +66,17 @@ font.bold = True
 df2 = pd.read_excel (canoload[0], sheet_name='set_12_data_1')
 conditions = []
 constring = ''
-for n in range(len(df2)//2):
-    conditions.append(df2.iloc[n, 0].split('_')[0])
-    if n != (len(df2) - 1)//2:
-        constring += conditions[n] + ', '
+for n in range(len(df2)):
+    conditions.append(df2.iloc[n, 0])
+conditionshort = []
+for n in range(len(conditions)):
+    conditionshort.append(conditions[n].split('_')[0])
+conditionshort = list(dict.fromkeys(conditionshort))
+for n in range(len(conditionshort)):
+    if n != (len(conditionshort) - 1):
+        constring += conditionshort[n] + ', '
     else:
-        constring += 'and ' + conditions[n] + '.'
+        constring += 'and ' + conditionshort[n] + '.'
 netstring = ''
 for n in range(len(networkshort)):
     if n != len(networkshort) - 1:
@@ -90,7 +95,7 @@ for n in range(len(Groups)):
         groupstring += Groups[n] + ', '
     else:
         groupstring += 'and ' + Groups[n] + '.'
-constringarray = ["Subjects in the " + conditions[j] + " condition were ___(explain " + conditions[j] + " condition)___. " for j in range(len(conditions))]
+constringarray = ["Subjects in the " + conditionshort[j] + " condition were ___(explain " + conditionshort[j] + " condition)___. " for j in range(len(conditionshort))]
 constringlong = ""
 for n in range(len(constringarray)):
     constringlong += (constringarray[n])
@@ -102,8 +107,8 @@ mydoc.add_heading("Summary of Study, Networks, Conditions, and Behavioural Data"
 if len(Groups) == 1:
     mydoc.add_paragraph(
         "This report is for the ________ (" + Task + ") task, in which participants were ___(describe task)___. There were " + str(
-            len(conditions))
-        + ' conditions: ' + constring + constringlong + ' The ' + str(
+            len(conditionshort))
+        + ' conditions: ' + constring + ' ' + constringlong + ' The ' + str(
             len(network)) + ' networks identified as part of this study are: '
         + netstring + ' Variables inputted include the ITP and RTB values for each network. '
                       'Behavioural variables used in the analysis are ' + varstring)
@@ -111,7 +116,7 @@ if len(Groups) > 1:
     mydoc.add_paragraph(
         "This report is for the ________ (" + Task + ") task, in which participants were ___(describe task)___. There were " + str(
             len(Groups)) + " groups: " + groupstring + " There were " + str(
-            len(conditions))
+            len(conditionshort))
         + ' conditions: ' + constring + ' ' + constringlong + ' The ' + str(
             len(network)) + ' networks identified as part of this study are: '
         + netstring + ' Variables inputted include the ITP and RTB values for each network. '
