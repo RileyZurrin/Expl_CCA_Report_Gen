@@ -1,6 +1,8 @@
 # Expl_CCA_Report_Gen
 A script to generate a report for exploratory CCA output.
 
+Version 2 solves minor bugs and is compatible with multiple group analyses.
+
 Steps to run:
 
 i) Add canoload, CCA, and PCA files for each group from exploratory CCA output to your py project folder
