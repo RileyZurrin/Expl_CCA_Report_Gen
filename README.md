@@ -8,7 +8,7 @@ Steps to run:
 i) Add canoload, CCA, and PCA files for each group from exploratory CCA output to your py project folder
     e.g.'canoload_LDT_Con.xlsx', 'CCA_LDT_Con.csv', 'PCA_LDT_Con.csv', 'canoload_LDT_Bip.xlsx', 'CCA_LDT_Bip.csv', 'PCA_LDT_Bip.csv'
 
-ii) Make Variables.csv file containing all behavioural variables. The easiest way to do this is to open the input files (e.g. demographics_Controls.csv) for exploratory CCA and copy and paste the variables into an Excel sheet. 
+ii) Make Variables file (Variables.xlsx or Variables.csv) containing all behavioural variables. The easiest way to do this is to open the input files (e.g. demographics_Controls.csv) for exploratory CCA and copy and paste the variables into an Excel sheet. 
     e.g. Handedness, Sex, Gender_Identity
     
 iii) Add Variables.csv file to py project folder
