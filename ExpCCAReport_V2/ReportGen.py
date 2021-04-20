@@ -360,7 +360,11 @@ for p in range(len(Groups)):
             sheet = ''
             for k in range(len(Networks)):
                 NMF(Networks[k])
-                Head4 = Head4 + NMF(Networks[k]) + ' & '
+                try:
+                    Head4 = Head4 + NMF(Networks[k]) + ' & '
+                except TypeError:
+                    print("Error: The names you inputted into networkshort (e.g. DMN_AAR) do not match the names in the canoload Excel file.")
+                    exit()
                 sheet = sheet + DSNMF(Networks[k])
             Networks.remove(matrix[j][1])
             Networks.insert(0, matrix[j][1])
