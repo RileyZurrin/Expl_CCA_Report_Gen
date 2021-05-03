@@ -3,6 +3,8 @@ A script to generate a report for exploratory CCA output.
 
 Version 2 solves minor bugs and is compatible with multiple group analyses.
 
+Version 3 includes several aesthetic changes and rearrangements meant to ease interpretation. Informative notes were added.
+
 Steps to run:
 
 i) Add canoload, CCA, and PCA files for each group from exploratory CCA output to your py project folder
