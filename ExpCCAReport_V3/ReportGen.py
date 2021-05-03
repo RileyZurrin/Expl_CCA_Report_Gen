@@ -7,7 +7,6 @@ from docx.shared import Pt
 import numpy as np
 import pandas as pd
 
-
 #Task Abbreviation
 Task = "LDT"
 #Groups
@@ -23,14 +22,13 @@ network = ['C1_Neg_91_TDMN_0.77', 'C2_Pos_86_LPN_1.52','C3_Pos_71_1RESP_1.14']
 #Shortened Names (In same order as line above, with names matching the names in canoload.xlsx file)
 networkshort = ['DMN', 'LPN', 'RESP']
 
-#Open Variables.csv File
+#Open Variables.csv File (edit if and only if name for variables file is not 'Variables.csv')
 with open('Variables.csv') as csv_file:
     var = csv.reader(csv_file, delimiter=',')
     variables = list(var)[0]
 
-#variables = ["Children"]
 
-#Do Not Edit Below This Line
+#No Need to Edit Below This Line
 #--------------------------------------------------------------------------------------------------
 
 
